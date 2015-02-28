@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813D8DDB1AA2498E0069B2D5 /* Teachers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813D8DDA1AA2498E0069B2D5 /* Teachers.plist */; };
 		819CF48B1AA24857000CD172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48A1AA24857000CD172 /* main.m */; };
 		819CF48E1AA24857000CD172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48D1AA24857000CD172 /* AppDelegate.m */; };
 		819CF4911AA24857000CD172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF4901AA24857000CD172 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		813D8DDA1AA2498E0069B2D5 /* Teachers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Teachers.plist; sourceTree = "<group>"; };
 		819CF4851AA24857000CD172 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819CF4891AA24857000CD172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819CF48A1AA24857000CD172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		819CF4881AA24857000CD172 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				813D8DDA1AA2498E0069B2D5 /* Teachers.plist */,
 				819CF4891AA24857000CD172 /* Info.plist */,
 				819CF48A1AA24857000CD172 /* main.m */,
 			);
@@ -202,6 +205,7 @@
 				819CF4941AA24857000CD172 /* Main.storyboard in Resources */,
 				819CF4991AA24857000CD172 /* LaunchScreen.xib in Resources */,
 				819CF4961AA24857000CD172 /* Images.xcassets in Resources */,
+				813D8DDB1AA2498E0069B2D5 /* Teachers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +416,7 @@
 				819CF4AA1AA24857000CD172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		819CF4AB1AA24857000CD172 /* Build configuration list for PBXNativeTarget "TeachersTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				819CF4AD1AA24857000CD172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
