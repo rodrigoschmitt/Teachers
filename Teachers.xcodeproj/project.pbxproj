@@ -10,11 +10,16 @@
 		813D8DDB1AA2498E0069B2D5 /* Teachers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813D8DDA1AA2498E0069B2D5 /* Teachers.plist */; };
 		819CF48B1AA24857000CD172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48A1AA24857000CD172 /* main.m */; };
 		819CF48E1AA24857000CD172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48D1AA24857000CD172 /* AppDelegate.m */; };
-		819CF4911AA24857000CD172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF4901AA24857000CD172 /* ViewController.m */; };
 		819CF4941AA24857000CD172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819CF4921AA24857000CD172 /* Main.storyboard */; };
 		819CF4961AA24857000CD172 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819CF4951AA24857000CD172 /* Images.xcassets */; };
 		819CF4991AA24857000CD172 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819CF4971AA24857000CD172 /* LaunchScreen.xib */; };
 		819CF4A51AA24857000CD172 /* TeachersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF4A41AA24857000CD172 /* TeachersTests.m */; };
+		819F9C9D1AA2A62500009356 /* TeachersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9C9C1AA2A62500009356 /* TeachersTableViewController.m */; };
+		819F9CA01AA2A63D00009356 /* TeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9C9F1AA2A63D00009356 /* TeacherTableViewCell.m */; };
+		819F9CA31AA2A65D00009356 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA21AA2A65D00009356 /* ProfileViewController.m */; };
+		819F9CA61AA2AB3400009356 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA51AA2AB3400009356 /* Util.m */; };
+		819F9CA91AA2AD3500009356 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA81AA2AD3500009356 /* Teacher.m */; };
+		819F9CAC1AA2AD4200009356 /* TeacherControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CAB1AA2AD4200009356 /* TeacherControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +39,24 @@
 		819CF48A1AA24857000CD172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819CF48C1AA24857000CD172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		819CF48D1AA24857000CD172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		819CF48F1AA24857000CD172 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		819CF4901AA24857000CD172 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		819CF4931AA24857000CD172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		819CF4951AA24857000CD172 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		819CF4981AA24857000CD172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		819CF49E1AA24857000CD172 /* TeachersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819CF4A31AA24857000CD172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819CF4A41AA24857000CD172 /* TeachersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachersTests.m; sourceTree = "<group>"; };
+		819F9C9B1AA2A62500009356 /* TeachersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeachersTableViewController.h; path = Controller/TeachersTableViewController.h; sourceTree = "<group>"; };
+		819F9C9C1AA2A62500009356 /* TeachersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeachersTableViewController.m; path = Controller/TeachersTableViewController.m; sourceTree = "<group>"; };
+		819F9C9E1AA2A63D00009356 /* TeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherTableViewCell.h; path = Controller/TeacherTableViewCell.h; sourceTree = "<group>"; };
+		819F9C9F1AA2A63D00009356 /* TeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherTableViewCell.m; path = Controller/TeacherTableViewCell.m; sourceTree = "<group>"; };
+		819F9CA11AA2A65D00009356 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Controller/ProfileViewController.h; sourceTree = "<group>"; };
+		819F9CA21AA2A65D00009356 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Controller/ProfileViewController.m; sourceTree = "<group>"; };
+		819F9CA41AA2AB3400009356 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		819F9CA51AA2AB3400009356 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		819F9CA71AA2AD3500009356 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teacher.h; path = Model/Teacher.h; sourceTree = "<group>"; };
+		819F9CA81AA2AD3500009356 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Teacher.m; path = Model/Teacher.m; sourceTree = "<group>"; };
+		819F9CAA1AA2AD4200009356 /* TeacherControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherControl.h; path = Model/TeacherControl.h; sourceTree = "<group>"; };
+		819F9CAB1AA2AD4200009356 /* TeacherControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherControl.m; path = Model/TeacherControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +98,14 @@
 		819CF4871AA24857000CD172 /* Teachers */ = {
 			isa = PBXGroup;
 			children = (
+				819F9CA41AA2AB3400009356 /* Util.h */,
+				819F9CA51AA2AB3400009356 /* Util.m */,
 				819CF48C1AA24857000CD172 /* AppDelegate.h */,
 				819CF48D1AA24857000CD172 /* AppDelegate.m */,
-				819CF48F1AA24857000CD172 /* ViewController.h */,
-				819CF4901AA24857000CD172 /* ViewController.m */,
-				819CF4921AA24857000CD172 /* Main.storyboard */,
+				819F9C9A1AA2A5DD00009356 /* Model */,
+				819F9C991AA2A5D800009356 /* View */,
+				819F9C981AA2A5A700009356 /* Controller */,
 				819CF4951AA24857000CD172 /* Images.xcassets */,
-				819CF4971AA24857000CD172 /* LaunchScreen.xib */,
 				819CF4881AA24857000CD172 /* Supporting Files */,
 			);
 			path = Teachers;
@@ -120,6 +136,39 @@
 				819CF4A31AA24857000CD172 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		819F9C981AA2A5A700009356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				819F9C9B1AA2A62500009356 /* TeachersTableViewController.h */,
+				819F9C9C1AA2A62500009356 /* TeachersTableViewController.m */,
+				819F9C9E1AA2A63D00009356 /* TeacherTableViewCell.h */,
+				819F9C9F1AA2A63D00009356 /* TeacherTableViewCell.m */,
+				819F9CA11AA2A65D00009356 /* ProfileViewController.h */,
+				819F9CA21AA2A65D00009356 /* ProfileViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		819F9C991AA2A5D800009356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				819CF4971AA24857000CD172 /* LaunchScreen.xib */,
+				819CF4921AA24857000CD172 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		819F9C9A1AA2A5DD00009356 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				819F9CA71AA2AD3500009356 /* Teacher.h */,
+				819F9CA81AA2AD3500009356 /* Teacher.m */,
+				819F9CAA1AA2AD4200009356 /* TeacherControl.h */,
+				819F9CAB1AA2AD4200009356 /* TeacherControl.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819CF4911AA24857000CD172 /* ViewController.m in Sources */,
+				819F9CAC1AA2AD4200009356 /* TeacherControl.m in Sources */,
+				819F9CA01AA2A63D00009356 /* TeacherTableViewCell.m in Sources */,
+				819F9CA91AA2AD3500009356 /* Teacher.m in Sources */,
 				819CF48E1AA24857000CD172 /* AppDelegate.m in Sources */,
+				819F9C9D1AA2A62500009356 /* TeachersTableViewController.m in Sources */,
 				819CF48B1AA24857000CD172 /* main.m in Sources */,
+				819F9CA31AA2A65D00009356 /* ProfileViewController.m in Sources */,
+				819F9CA61AA2AB3400009356 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
