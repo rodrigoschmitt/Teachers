@@ -10,12 +10,13 @@
 #import "TeacherTableViewCell.h"
 #import "ProfileViewController.h"
 #import "Teacher.h"
-#import "TeacherControl.h"
+#import "TeacherManager.h"
 
 @interface TeachersTableViewController () {
-    NSArray *teachers;
+    NSDictionary *institutions;
     
-    NSInteger cellAtIndex;
+    NSInteger cellIndex;
+    NSInteger sectionIndex;
 }
 
 @end
@@ -26,9 +27,9 @@
 
 - (void)loadData {
     
-    TeacherControl *teacherControl = [[TeacherControl alloc] init];
-    
-    teachers = [teacherControl requestTeachers];
+    TeacherManager *teacherManager = [[TeacherManager alloc] init];
+
+    institutions = [teacherManager requestInstitutions];
     
     [[self tableView] reloadData];
     
@@ -52,17 +53,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [institutions count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [teachers count];
+    return [[[institutions allValues] objectAtIndex:section] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    return [[institutions allKeys] objectAtIndex:section];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TeacherTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"teacherCell" forIndexPath:indexPath];
     
-    Teacher *teacher = [teachers objectAtIndex:indexPath.row];
+    Teacher *teacher = [[[institutions allValues] objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     cell.imgTeacher.image = teacher.photo;
     cell.lblName.text = teacher.name;
     cell.lblProfissional.text = teacher.professional;
@@ -73,7 +80,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    cellAtIndex = indexPath.row;
+    sectionIndex = indexPath.section;
+    cellIndex = indexPath.row;
     
     [self performSegueWithIdentifier:@"segueProfileViewController" sender:nil];
 }
@@ -85,7 +93,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     ProfileViewController *profileViewController = [segue destinationViewController];
-    profileViewController.teacher = [teachers objectAtIndex:cellAtIndex];
+    profileViewController.teacher = [[[institutions allValues] objectAtIndex:sectionIndex] objectAtIndex:cellIndex];;
     
 }
 

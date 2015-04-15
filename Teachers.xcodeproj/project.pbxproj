@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4F2FCE1ADE9E760054F5F0 /* Institution.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F2FCD1ADE9E760054F5F0 /* Institution.m */; };
 		813D8DDB1AA2498E0069B2D5 /* Teachers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813D8DDA1AA2498E0069B2D5 /* Teachers.plist */; };
 		819CF48B1AA24857000CD172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48A1AA24857000CD172 /* main.m */; };
 		819CF48E1AA24857000CD172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CF48D1AA24857000CD172 /* AppDelegate.m */; };
@@ -19,7 +20,7 @@
 		819F9CA31AA2A65D00009356 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA21AA2A65D00009356 /* ProfileViewController.m */; };
 		819F9CA61AA2AB3400009356 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA51AA2AB3400009356 /* Util.m */; };
 		819F9CA91AA2AD3500009356 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CA81AA2AD3500009356 /* Teacher.m */; };
-		819F9CAC1AA2AD4200009356 /* TeacherControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CAB1AA2AD4200009356 /* TeacherControl.m */; };
+		819F9CAC1AA2AD4200009356 /* TeacherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 819F9CAB1AA2AD4200009356 /* TeacherManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A4F2FCC1ADE9E760054F5F0 /* Institution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Institution.h; path = Model/Institution.h; sourceTree = "<group>"; };
+		4A4F2FCD1ADE9E760054F5F0 /* Institution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Institution.m; path = Model/Institution.m; sourceTree = "<group>"; };
 		813D8DDA1AA2498E0069B2D5 /* Teachers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Teachers.plist; sourceTree = "<group>"; };
 		819CF4851AA24857000CD172 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819CF4891AA24857000CD172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +58,8 @@
 		819F9CA51AA2AB3400009356 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		819F9CA71AA2AD3500009356 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teacher.h; path = Model/Teacher.h; sourceTree = "<group>"; };
 		819F9CA81AA2AD3500009356 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Teacher.m; path = Model/Teacher.m; sourceTree = "<group>"; };
-		819F9CAA1AA2AD4200009356 /* TeacherControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherControl.h; path = Model/TeacherControl.h; sourceTree = "<group>"; };
-		819F9CAB1AA2AD4200009356 /* TeacherControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherControl.m; path = Model/TeacherControl.m; sourceTree = "<group>"; };
+		819F9CAA1AA2AD4200009356 /* TeacherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherManager.h; path = Model/TeacherManager.h; sourceTree = "<group>"; };
+		819F9CAB1AA2AD4200009356 /* TeacherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherManager.m; path = Model/TeacherManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +168,10 @@
 			children = (
 				819F9CA71AA2AD3500009356 /* Teacher.h */,
 				819F9CA81AA2AD3500009356 /* Teacher.m */,
-				819F9CAA1AA2AD4200009356 /* TeacherControl.h */,
-				819F9CAB1AA2AD4200009356 /* TeacherControl.m */,
+				4A4F2FCC1ADE9E760054F5F0 /* Institution.h */,
+				4A4F2FCD1ADE9E760054F5F0 /* Institution.m */,
+				819F9CAA1AA2AD4200009356 /* TeacherManager.h */,
+				819F9CAB1AA2AD4200009356 /* TeacherManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,11 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819F9CAC1AA2AD4200009356 /* TeacherControl.m in Sources */,
+				819F9CAC1AA2AD4200009356 /* TeacherManager.m in Sources */,
 				819F9CA01AA2A63D00009356 /* TeacherTableViewCell.m in Sources */,
 				819F9CA91AA2AD3500009356 /* Teacher.m in Sources */,
 				819CF48E1AA24857000CD172 /* AppDelegate.m in Sources */,
 				819F9C9D1AA2A62500009356 /* TeachersTableViewController.m in Sources */,
+				4A4F2FCE1ADE9E760054F5F0 /* Institution.m in Sources */,
 				819CF48B1AA24857000CD172 /* main.m in Sources */,
 				819F9CA31AA2A65D00009356 /* ProfileViewController.m in Sources */,
 				819F9CA61AA2AB3400009356 /* Util.m in Sources */,

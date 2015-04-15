@@ -10,8 +10,8 @@
 
 @class Teacher;
 
-@interface TeacherControl : NSObject
+@interface TeacherManager: NSObject
 
-- (NSArray *)requestTeachers;
+- (NSMutableDictionary *)requestInstitutions;
 
 @end

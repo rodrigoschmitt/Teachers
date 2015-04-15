@@ -2,71 +2,73 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>teacher01</key>
-	<dict>
-		<key>name</key>
-		<string>Afonso Sales</string>
-		<key>professional</key>
-		<string>University Lecturer at PUCRS/UFRGS</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/afonsosales</string>
-		<key>photo</key>
-		<string>perfil_afonso.jpg</string>
-	</dict>
-	<key>teacher02</key>
-	<dict>
-		<key>name</key>
-		<string>Alan Santos</string>
-		<key>professional</key>
-		<string>R&amp;D Project Manager at PUCRS</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/asantosx</string>
-		<key>photo</key>
-		<string>perfil_alan.jpg</string>
-	</dict>
-	<key>teacher03</key>
-	<dict>
-		<key>name</key>
-		<string>Eduardo Borges Pinto Osório</string>
-		<key>professional</key>
-		<string>Digital Designer</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/eduardobposorio</string>
-		<key>photo</key>
-		<string>perfil_osorio.jpg</string>
-	</dict>
-	<key>teacher04</key>
-	<dict>
-		<key>name</key>
-		<string>Mauricio Meirelles</string>
-		<key>professional</key>
-		<string>iOS Instructor at BEPiD</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/mauriciomeirelles</string>
-		<key>photo</key>
-		<string>perfil_meirelles.jpg</string>
-	</dict>
-	<key>teacher05</key>
-	<dict>
-		<key>name</key>
-		<string>Maurício T Zaquia</string>
-		<key>professional</key>
-		<string>iOS Dev Instructor at BEPiD</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/mauriciotzaquia</string>
-		<key>photo</key>
-		<string>perfil_zaquia.jpg</string>
-	</dict>
-	<key>teacher06</key>
-	<dict>
-		<key>name</key>
-		<string>Ricardo Rauber Pereir</string>
-		<key>professional</key>
-		<string>iOS Instructor at BEPiD</string>
-		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/ricardorauber85</string>
-		<key>photo</key>
-		<string>perfil_ricardo.jpg</string>
-	</dict>
+	<key>PUC</key>
+	<array>
+		<string>PUC</string>
+		<dict>
+			<key>name</key>
+			<string>Afonso Sales</string>
+			<key>professional</key>
+			<string>University Lecturer at PUCRS/UFRGS</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/afonsosales</string>
+			<key>photo</key>
+			<string>perfil_afonso.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Alan Santos</string>
+			<key>professional</key>
+			<string>R&amp;D Project Manager at PUCRS</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/asantosx</string>
+			<key>photo</key>
+			<string>perfil_alan.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eduardo Borges Pinto Osório</string>
+			<key>professional</key>
+			<string>Digital Designer</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/eduardobposorio</string>
+			<key>photo</key>
+			<string>perfil_osorio.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Maurício T Zaquia</string>
+			<key>professional</key>
+			<string>iOS Dev Instructor at BEPiD</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/mauriciotzaquia</string>
+			<key>photo</key>
+			<string>perfil_zaquia.jpg</string>
+		</dict>
+	</array>
+	<key>Eldorado</key>
+	<array>
+		<string>Eldorado</string>
+		<dict>
+			<key>name</key>
+			<string>Mauricio Meirelles</string>
+			<key>professional</key>
+			<string>iOS Instructor at BEPiD</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/mauriciomeirelles</string>
+			<key>photo</key>
+			<string>perfil_meirelles.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ricardo Rauber Pereir</string>
+			<key>professional</key>
+			<string>iOS Instructor at BEPiD</string>
+			<key>linkedin</key>
+			<string>https://www.linkedin.com/in/ricardorauber85</string>
+			<key>photo</key>
+			<string>perfil_ricardo.jpg</string>
+		</dict>
+	</array>
 </dict>
 </plist>
