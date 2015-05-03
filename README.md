@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-<b>Sample code for implementation UIKit componentes.</b>
+<b>Sample code in Objective-C for implementation UIKit componentes.</b>
  
 This project uses this object library
 ------------
